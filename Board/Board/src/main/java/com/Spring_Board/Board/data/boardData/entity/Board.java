@@ -1,4 +1,4 @@
-package com.Spring_Board.Board.data.entity;
+package com.Spring_Board.Board.data.boardData.entity;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,8 @@
-package com.Spring_Board.Board.data.dao.Impl;
+package com.Spring_Board.Board.data.boardData.dao.Impl;
 
-import com.Spring_Board.Board.data.dao.BoardDAO;
-import com.Spring_Board.Board.data.entity.Board;
-import com.Spring_Board.Board.data.repository.BoardRepository;
+import com.Spring_Board.Board.data.boardData.dao.BoardDAO;
+import com.Spring_Board.Board.data.boardData.entity.Board;
+import com.Spring_Board.Board.data.boardData.repository.BoardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

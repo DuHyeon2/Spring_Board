@@ -1,9 +1,8 @@
-package com.Spring_Board.Board.controller;
+package com.Spring_Board.Board.controller.boardController;
 
-import com.Spring_Board.Board.data.dto.BoardDto;
-import com.Spring_Board.Board.data.dto.BoardResponseDto;
-import com.Spring_Board.Board.data.entity.Board;
-import com.Spring_Board.Board.service.BoardService;
+import com.Spring_Board.Board.data.boardData.dto.BoardDto;
+import com.Spring_Board.Board.data.boardData.dto.BoardResponseDto;
+import com.Spring_Board.Board.service.boardService.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

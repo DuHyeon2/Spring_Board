@@ -1,4 +1,4 @@
-package com.Spring_Board.Board.data.dto;
+package com.Spring_Board.Board.data.boardData.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,17 +1,18 @@
-package com.Spring_Board.Board.service.serviceImpl;
+package com.Spring_Board.Board.service.boardService.boardServiceImpl;
 
-import com.Spring_Board.Board.data.dao.BoardDAO;
-import com.Spring_Board.Board.data.dto.BoardDto;
-import com.Spring_Board.Board.data.dto.BoardResponseDto;
-import com.Spring_Board.Board.data.entity.Board;
-import com.Spring_Board.Board.service.BoardService;
-import org.springframework.stereotype.Component;
+import com.Spring_Board.Board.data.boardData.dao.BoardDAO;
+import com.Spring_Board.Board.data.boardData.dto.BoardDto;
+import com.Spring_Board.Board.data.boardData.dto.BoardResponseDto;
+import com.Spring_Board.Board.data.boardData.entity.Board;
+import com.Spring_Board.Board.service.boardService.BoardService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class BoardServiceImpl implements BoardService {
     private final BoardDAO boardDAO;
 
+    @Autowired
     public BoardServiceImpl(BoardDAO boardDAO) {
         this.boardDAO = boardDAO;
     }
@@ -33,8 +34,8 @@ public class BoardServiceImpl implements BoardService {
     public BoardResponseDto saveBoard(BoardDto boardDto) {
         Board board = new Board();
         board.setName(boardDto.getName());
-        board.setTitle(board.getTitle());
-        board.setContent(board.getContent());
+        board.setTitle(boardDto.getTitle());
+        board.setContent(boardDto.getContent());
 
         Board saveBoard = boardDAO.insertBoard(board);
 
