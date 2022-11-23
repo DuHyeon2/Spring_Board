@@ -1,7 +1,6 @@
-package com.Spring_Board.Board.data.memberData.dao.daoImple;
+package com.Spring_Board.Board.data.memberData.dao.Impl;
 
 import com.Spring_Board.Board.data.memberData.dao.MemberDAO;
-import com.Spring_Board.Board.data.memberData.dto.MemberResponseDto;
 import com.Spring_Board.Board.data.memberData.entity.Member;
 import com.Spring_Board.Board.data.memberData.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +20,7 @@ public class MemberDAOImpl implements MemberDAO {
 
     @Override
     public Member joinMember(Member member) {
-        Member joinMember = memberRepository.save(member);
-        return joinMember;
+        return memberRepository.save(member);
     }
 
     @Override
